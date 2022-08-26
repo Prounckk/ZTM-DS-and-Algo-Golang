@@ -1,3 +1,5 @@
+[![Go](https://github.com/Prounckk/ZTM-DS-and-Algo-Golang/actions/workflows/go.yml/badge.svg?branch=main)](https://github.com/Prounckk/ZTM-DS-and-Algo-Golang/actions/workflows/go.yml)
+
 # ZTM-DS-and-Algo-Golang
 
 Contains all the code samples, implementations, and exercises from the Zero to Mastery : Master the Coding Interview - Data Structures + Algorithms course by Andrei Neagoie, in Golang.
