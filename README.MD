@@ -12,5 +12,5 @@ Contains all the code samples, implementations, and exercises from the Zero to M
     3. [O(n^2)](https://github.com/Prounckk/ZTM-DS-and-Algo-Golang/tree/main/Big-O/O-nn/)
 2. [Data Structures](https://github.com/Prounckk/ZTM-DS-and-Algo-Golang/tree/main/DataStructures/)
     1. [Arrays](https://github.com/Prounckk/ZTM-DS-and-Algo-Golang/tree/main/DataStructures/Array/)
-    
+    2. [Threes](https://github.com/Prounckk/ZTM-DS-and-Algo-Golang/tree/main/DataStructures/Threes/    
 3. [Algo](#soon)    
