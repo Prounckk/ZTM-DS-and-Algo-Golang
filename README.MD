@@ -1,4 +1,6 @@
-[![Go](https://github.com/Prounckk/ZTM-DS-and-Algo-Golang/actions/workflows/go.yml/badge.svg?branch=main)](https://github.com/Prounckk/ZTM-DS-and-Algo-Golang/actions/workflows/go.yml)
+[![Go](https://github.com/Prounckk/ZTM-DS-and-Algo-Golang/actions/workflows/go.yml/badge.svg?branch=main)](https://github.com/Prounckk/ZTM-DS-and-Algo-Golang/actions/workflows/go.yml)  
+![Coverage](https://github.com/Prounckk/ZTM-DS-and-Algo-Golang/blob/main/badge.svg)
+
 
 # ZTM-DS-and-Algo-Golang
 
