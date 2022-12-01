@@ -12,14 +12,42 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+      with:
+        token: ${{ github.token }}
+        
 
     - name: Set up Go
       uses: actions/setup-go@v3
       with:
-        go-version: 1.18
+        go-version: 1.19
 
     - name: Run all tests
-      run: go test -v ./...
+      run: go test ./... -coverprofile coverage.out
 
     - name: Run all benchmarks 
       run: go test -bench=. -benchmem -v ./...
+
+    - name: Configure git
+      run: |
+        git config --global user.name "CI Bot"
+        git config --global user.email "bot@eremeev.ca"
+
+    - name: generate an image
+      run: |
+        set -x
+        total=`go tool cover -func=coverage.out | grep total: | grep -Eo '[0-9]+\.[0-9]+'`
+        if (( $(echo "$total <= 50" | bc -l) )) ; then
+            COLOR=red
+        elif (( $(echo "$total > 80" | bc -l) )); then
+            COLOR=green
+        else
+            COLOR=orange
+        fi
+
+        curl "https://img.shields.io/badge/coavrege-$total%25-$COLOR" > badge.svg
+        git pull
+        git add badge.svg
+        git commit -m "added badge"
+        git push 
+           
+  
