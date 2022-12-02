@@ -1,5 +1,5 @@
 [![Go](https://github.com/Prounckk/ZTM-DS-and-Algo-Golang/actions/workflows/go.yml/badge.svg?branch=main)](https://github.com/Prounckk/ZTM-DS-and-Algo-Golang/actions/workflows/go.yml)  
-![Coverage](https://github.com/Prounckk/ZTM-DS-and-Algo-Golang/blob/main/badge.svg)
+![Coverage](https://github.com/Prounckk/ZTM-DS-and-Algo-Golang/blob/badge/badge.svg?branch=badge)
 
 
 # ZTM-DS-and-Algo-Golang
