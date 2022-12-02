@@ -46,7 +46,7 @@ jobs:
         fi
 
         git fetch
-        git checkout badge
+        git checkout badge -f
         git pull
         git merge origin/main  
         curl "https://img.shields.io/badge/coverage-$total%25-$COLOR" > badge.svg
