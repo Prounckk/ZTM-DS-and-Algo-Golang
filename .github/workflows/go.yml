@@ -27,6 +27,7 @@ jobs:
     - name: Run all benchmarks 
       run: go test -bench=. -benchmem -v ./...
 
+
     - name: Configure git
       run: |
         git config --global user.name "CI Bot"
@@ -44,7 +45,8 @@ jobs:
             COLOR=orange
         fi
 
-        curl "https://img.shields.io/badge/Coverage-$total%25-$COLOR" > badge.svg
+        curl "https://img.shields.io/badge/coverage-$total%25-$COLOR" > badge.svg
+        git pull
         git add badge.svg
         git commit -m "added badge"
         git push 
