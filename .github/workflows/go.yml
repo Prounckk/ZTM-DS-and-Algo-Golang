@@ -45,7 +45,8 @@ jobs:
             COLOR=orange
         fi
 
-        git switch badge
+        git fetch
+        git checkout badge
         git pull
         curl "https://img.shields.io/badge/coverage-$total%25-$COLOR" > badge.svg
         git add badge.svg
